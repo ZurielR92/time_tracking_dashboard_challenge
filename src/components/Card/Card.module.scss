@@ -1,0 +1,45 @@
+.card {
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    &:hover .body {
+        background: hsl(235, 45%, 61%);
+    }
+
+    img {
+        right: 10px;
+        top: -7px;
+        position: absolute;
+        width: 50px;
+    }
+
+    .body {
+        position: inherit;
+        width: 100%;
+        margin-top: 30px;
+        background-color: hsl(235, 46%, 20%);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        .title {
+            display: flex;
+            font-size: 1.13rem;
+            >:nth-child(1) {
+                flex-grow: 1;
+            }
+        }
+        .hours {
+            font-weight: lighter;
+            font-size: 2rem;
+            margin-top: 10px;
+        }
+        .previous {
+            margin-top: 5px;
+            margin-bottom: 8px;
+        }
+    }
+
+}
